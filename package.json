@@ -2,7 +2,7 @@
   "name": "travel",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "youzishule",
+  "author": "ChillyBreeze1998 <1342327426@qq.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -12,8 +12,6 @@
   },
   "dependencies": {
     "fastclick": "^1.0.6",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -54,6 +52,8 @@
     "rimraf": "^2.6.0",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
