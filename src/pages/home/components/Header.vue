@@ -7,9 +7,11 @@
      <span class="iconfont">&#xe632;</span>
      输入城市/景点/游玩主题
      </div>
+     <router-link to="/city">
    <div class="header-right">{{this.city}}
      <span class="iconfont xiaJianTou-icon">&#xeb6d;</span>
    </div>
+   </router-link>
 </div>
 </template>
 
@@ -28,7 +30,7 @@ export default {
   .header
     display: flex
     // 原来是86px，设计师给的图是2倍的，所以除以2,1rem =50px，所以43px除50就是rem的大小
-    line-height  .86rem
+    line-height  $headerHight
     background  $bgColor
     color #fff
 //头左边样式
@@ -55,6 +57,7 @@ export default {
     width  1.24rem
     float right
     text-align center
+    color #fff
   .xiaJianTou-icon
     font-size .23rem
  </style>
