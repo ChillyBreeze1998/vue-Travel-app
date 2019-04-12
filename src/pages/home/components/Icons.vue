@@ -19,7 +19,7 @@ export default {
   data () {
     return {
       swiperOption: {
-        loop: true
+
       },
 
       iconList: [{
@@ -56,8 +56,12 @@ export default {
         desc: '红崖谷'
       }, {
         id: '0009',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/d1/5053d0519cf1cc02.png',
-        desc: '红崖谷'
+        imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/338c5b924c5809e8c7b14f60a953c3e2.png',
+        desc: '北京欢乐谷'
+      }, {
+        id: '0010',
+        imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/f85ce21492e4f7896498dc70dc43f8b3.png',
+        desc: '天桂山'
       }]
     }
   },
