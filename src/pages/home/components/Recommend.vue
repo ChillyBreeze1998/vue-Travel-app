@@ -6,7 +6,7 @@
         猜你喜欢
     </div>
     <ul>
-        <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+        <li class="item border-bottom" v-for="item in list" :key="item.id">
                 <img class="item-img" :src="item.imgUrl">
                 <div class="item-img-tag" style="background-image:url(https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png)">随买随用</div>
             <div class="item-info">
@@ -31,31 +31,12 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1605/99/994a4f48dd1ee9fa90.water.jpg_200x200_f48177bd.jpg',
-        title: '荣国府',
-        price: '36.9',
-        comment: '2842',
-        position: '正定县'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1509/d3/d3e80935a714d3b4.img.jpg_200x200_86fabdf7.jpg',
-        title: '石家庄植物园',
-        price: '36.9',
-        comment: '305',
-        position: '新华区'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1704/a8/a8aa90887648820ba3.img.jpg_200x200_4b2b15a7.jpg',
-        title: '红崖谷',
-        price: '36.9',
-        comment: '505',
-        position: '平山县'
-      }
-      ]
+
     }
   }
 }

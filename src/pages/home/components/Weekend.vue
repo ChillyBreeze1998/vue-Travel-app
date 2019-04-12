@@ -5,7 +5,7 @@
         周末去哪儿
     </div>
     <ul>
-        <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+        <li class="item border-bottom" v-for="item in list" :key="item.id">
                <div class="item-img-wrapper">
                    <img class="item-img" :src="item.imgUrl">
                </div>
@@ -22,25 +22,12 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1812/b5/102e9610089aa5.jpg_r_640x214_80fe0bd7.jpg',
-        title: '石家庄温泉胜地',
-        desc: '石家庄有没有让你心动的温泉'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1812/83/d532bca9d7b91a.jpg_r_640x214_c3069246.jpg',
-        title: '石家庄必游',
-        desc: '旅游资源丰富，名胜古迹众多'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1507/82/06e79c5f8d6e7.jpg_r_640x214_5e63707e.jpg',
-        title: '当地人玩什么',
-        desc: '石家庄人民周末好玩法，来这里欣赏“红日浴海”的奇景，观看海上壮观的日出景象'
-      }
-      ]
+
     }
   }
 }

@@ -16,6 +16,9 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
@@ -68,7 +71,7 @@ export default {
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         //   如果不存在pages下的page(超过8个自动隐藏，因为样式写了overflow hidden，超过大小自动隐藏)，如果不存在则让他等于一个新的空数组，这样就变成2个数组了
         if (!pages[page]) {

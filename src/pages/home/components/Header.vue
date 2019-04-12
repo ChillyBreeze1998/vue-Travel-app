@@ -7,7 +7,7 @@
      <span class="iconfont">&#xe632;</span>
      输入城市/景点/游玩主题
      </div>
-   <div class="header-right">城市
+   <div class="header-right">{{this.city}}
      <span class="iconfont xiaJianTou-icon">&#xeb6d;</span>
    </div>
 </div>
@@ -15,7 +15,10 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props: {
+    city: String
+  }
 }
 </script>
 
@@ -53,5 +56,5 @@ export default {
     float right
     text-align center
   .xiaJianTou-icon
-    font-size .3rem
+    font-size .23rem
  </style>
