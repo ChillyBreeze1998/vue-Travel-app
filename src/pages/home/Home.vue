@@ -1,6 +1,6 @@
 <template>
 <div>
-   <Header :city="city"></Header>
+   <Header></Header>
    <!-- 引入轮播图 -->
    <carrousel :list="swiperList"></carrousel>
    <!-- 引入主页图标 -->
@@ -31,7 +31,6 @@ export default {
   },
   data () {
     return {
-      city: '',
       swiperList: [],
       iconList: [],
       recommendList: [],
@@ -50,7 +49,6 @@ export default {
       // 如果获取到res下的ret 与 res下的data同时得到则让city = data的city,这样就可以直接调用city了
       if (res.ret && res.data) {
         const data = res.data
-        this.city = data.city
         this.swiperList = data.swiperList
         this.iconList = data.iconList
         this.recommendList = data.recommendList

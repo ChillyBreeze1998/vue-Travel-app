@@ -8,7 +8,7 @@
      输入城市/景点/游玩主题
      </div>
      <router-link to="/city">
-   <div class="header-right">{{this.city}}
+   <div class="header-right">{{this.$store.state.city}}
      <span class="iconfont xiaJianTou-icon">&#xeb6d;</span>
    </div>
    </router-link>
@@ -17,10 +17,7 @@
 
 <script>
 export default {
-  name: 'Header',
-  props: {
-    city: String
-  }
+  name: 'Header'
 }
 </script>
 
@@ -54,7 +51,8 @@ export default {
      margin-left .2rem
 //头右边样式
   .header-right
-    width  1.24rem
+    min-width  1.04rem
+    padding 0 .1rem
     float right
     text-align center
     color #fff
