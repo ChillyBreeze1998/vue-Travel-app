@@ -6,7 +6,12 @@
         猜你喜欢
     </div>
     <ul>
-        <li class="item border-bottom" v-for="item in list" :key="item.id">
+        <router-link tag="li"
+         class="item border-bottom"
+         v-for="item in list"
+         :key="item.id"
+         :to="'/detail/' + item.id"
+         >
                 <img class="item-img" :src="item.imgUrl">
                 <div class="item-img-tag" style="background-image:url(https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png)">随买随用</div>
             <div class="item-info">
@@ -22,7 +27,7 @@
                     <span class="position">{{item.position}}</span>
                 </div>
             </div>
-        </li>
+        </router-link>
     </ul>
     </div>
 </div>
